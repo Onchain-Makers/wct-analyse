@@ -1,0 +1,35 @@
+{
+	"remappings": [
+		"@openzeppelin/=node_modules/@openzeppelin/",
+		"forge-std/=lib/forge-std/src/",
+		"openzeppelin-foundry-upgrades/=lib/openzeppelin-foundry-upgrades/src/",
+		"safe-smart-account/=lib/safe-smart-account/",
+		"src/=src/",
+		"script/=script/",
+		"test/=test/"
+	],
+	"optimizer": {
+		"enabled": true,
+		"runs": 10000
+	},
+	"metadata": {
+		"useLiteralContent": false,
+		"bytecodeHash": "none",
+		"appendCBOR": true
+	},
+	"outputSelection": {
+		"*": {
+			"*": [
+				"evm.bytecode",
+				"evm.deployedBytecode",
+				"devdoc",
+				"userdoc",
+				"metadata",
+				"abi"
+			]
+		}
+	},
+	"evmVersion": "paris",
+	"viaIR": false,
+	"libraries": {}
+}
