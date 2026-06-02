@@ -89,7 +89,7 @@
 |---|---|
 | **代理实现合约（L2WCT impl）** | `0xeF4461891DfB3AC8572cCf7C794664A8DD927945` 是代理；本地源码有 [L2WCT.sol](../src/contracts/WCT/L2WCT%20(implementation)/src/L2WCT.sol)，但链上实现地址未确认 |
 | **ProxyAdmin** | 透明代理升级机制的另一半（本地有 TransparentUpgradeableProxy 源码） |
-| **NTT Manager / Transceiver** | 跨链 burn/mint 执行体；三链同地址设计离不开它 |
+| **NTT Manager / Transceiver** | ✅ **已找到**：`0x85c0129be5226c9f0cf4e419d2fefc1c3fca25cf`（`NttManagerWithExecutor`，Wormhole NTT 跨链桥管理合约，executor `0x85B704501f6AE718205C0636260768C4e72ac3e7`）。子金库经它把 WCT 跨链送出。详见 [三大子金库.md](三大子金库.md) A 段。 |
 | **Governor 治理投票合约** | 文档有 Governance 栏目却无地址；2025-04-15 解禁就是治理投票通过的 |
 
 > 下一步可做：用 Dune 解码表 / 字节码把 2.1 的 🔶 升级为 ✅，并把 2.2 的合约在链上找出来。
