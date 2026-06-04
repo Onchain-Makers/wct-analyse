@@ -1,2 +1,6 @@
 .venv/
 debug.log
+
+# local harness settings (machine-specific); skills under .claude/skills/ ARE tracked
+.claude/settings.json
+.claude/settings.local.json
